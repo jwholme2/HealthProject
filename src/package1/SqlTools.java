@@ -16,11 +16,11 @@ public class SqlTools {
 
 	private static Connection makeMyConnection() throws SQLException{
 		//URL of Oracle database server
-		String url = "jdbc:oracle:thin:@ora.csc.ncsu.edu:1521:ORCL"; 
+		String url = "jdbc:oracle:thin:@fake.csc.ncsu.edu:fakeport123:ORCL"; 
 
 		//properties for creating connection to Oracle database
 		Properties props = new Properties();
-		props.setProperty("user", "user123");
+		props.setProperty("user", "fakeuser");
 		props.setProperty("password", "fakepassword");
 
 		//creating connection to Oracle database using JDBC
